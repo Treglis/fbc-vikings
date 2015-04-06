@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:jalbum="http://jalbum.net/jalbumrss">
+
+    <channel>
+        <title>29.3.09 SUP</title>
+   	<link>..</link>
+        <generator>Jalbum 8.4</generator>
+   		<description></description>
+        
+        
+        <item>
+            <title>Sugin</title>
+            <link>slides/Sugin.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Sugin.JPG" width="89" height="120"/>
+            <media:content url="slides/Sugin.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Sugin.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Domi</title>
+            <link>slides/Domi.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Domi.JPG" width="89" height="120"/>
+            <media:content url="slides/Domi.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Domi.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Libor</title>
+            <link>slides/Libor.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Libor.JPG" width="120" height="90"/>
+            <media:content url="slides/Libor.JPG" width="800" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Libor.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Lukas</title>
+            <link>slides/Lukas.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Lukas.JPG" width="120" height="90"/>
+            <media:content url="slides/Lukas.JPG" width="800" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Lukas.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Majkl</title>
+            <link>slides/Majkl.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Majkl.JPG" width="89" height="120"/>
+            <media:content url="slides/Majkl.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Majkl.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Nebe</title>
+            <link>slides/Nebe.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Nebe.JPG" width="89" height="120"/>
+            <media:content url="slides/Nebe.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Nebe.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Sugin2</title>
+            <link>slides/Sugin2.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Sugin2.JPG" width="89" height="120"/>
+            <media:content url="slides/Sugin2.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Sugin2.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Treglos</title>
+            <link>slides/Treglos.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Treglos.JPG" width="89" height="120"/>
+            <media:content url="slides/Treglos.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Treglos.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Treglos2</title>
+            <link>slides/Treglos2.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Treglos2.JPG" width="89" height="120"/>
+            <media:content url="slides/Treglos2.JPG" width="449" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Treglos2.JPG</guid>
+        </item>
+        
+        <item>
+            <title>Tym</title>
+            <link>slides/Tym.html#</link>
+            <pubDate>Tue, 24 Nov 2009 12:36:01 +0100</pubDate>
+            <description></description>
+            <media:description type="html"></media:description>
+            <media:thumbnail url="thumbs/Tym.JPG" width="120" height="90"/>
+            <media:content url="slides/Tym.JPG" width="800" height="600"/>
+            
+            
+            <guid isPermaLink="false">slides/Tym.JPG</guid>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,466 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.3.1
+-- http://www.phpmyadmin.net
+--
+-- Poèítaè: localhost
+-- Vygenerováno: Úterı 01. záøí 2009, 20:41
+-- Verze MySQL: 5.1.33
+-- Verze PHP: 5.2.9-2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Databáze: `weby`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `aktuality`
+--
+
+CREATE TABLE IF NOT EXISTS `aktuality` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `datum` varchar(255) COLLATE utf8_bin NOT NULL,
+  `nazev` varchar(255) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `autor` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=4 ;
+
+--
+-- Vypisuji data pro tabulku `aktuality`
+--
+
+INSERT INTO `aktuality` (`id`, `datum`, `nazev`, `text`, `autor`) VALUES
+(1, '5.5.09', 'Sraz v Galaxii', 'Tuhle sobotu 9.5. v Bakovì v Galaxii v 17:00 sraz tımu. Respektive se jedná o zaplacení všech pøíspìvkù na novou sezónu. Dìláme to takhle, protoe z nìkterıch lidí se ty peníze špatnì dostávají. Jestli se nebudete moct nìkdo dostavit, tak to muete poslat po nìkom jinım nebo mi to doruèit nìjakım jinım zpùsobem, èi nìkdy jindy. Dále jsme rozhodli, e kdo to nezaplatí tak ho nezapíšem na další rok, protoze to ze svıho prostì platit nechcem. Nechcem nikoho vyhazovat, ale kdy èlovìk chce hrát, tak ty peníze dá. Pokud s tím máte nìkdo však nìjakı problém, tak mi klidnì dejte vìdìt, ale vèas. Poplatek èiní <b>560Kè</b> pro kadıho + pøípadné nìèí resty. Doufám ale e se nás sejdem dost, abychom alespoò prohodili zas pár slov a nìco popili. Jestì taky padnul návrh udìlat si vlastní tımové mikiny. Podle mì to je docela dobrı nápad, take pokud by byl vìtší zájem, mohli bychom to zrealizovat. Ještì se dohodnem v sobotu zdar.', 'Pavel Tregl'),
+(2, '7.4.09', 'Zakonèení sezóny', 'A je to tu. Konec sezóny. Kdo by to byl øekl, e ten èas tak rychle uteèe. Kdy jsme v záøí nastupovali jako novı tım k prvnímu zápasu, nikdo nevìdìl co jsme zaè a ani netušili co je èeká. Ji po prvních dvou zápasech jsme jasnì ukázali naši sílu a naznaèili jakı je náš cíl pro tuto sezónu. Jediná ztráta bodù v 2.lize byla s tımem drakù. Zápas byl ji od zaèátku v naši reii, slibné vedení 4:0 jsme ale nedokázali udret a draci se dostali do tempa. Zápas plnı zvratù a faulù nakonec dopadl shodnì pro obì strany. Remíza 9:9 byla zaslouená a oba soupeøi nakonec odcházeli spokojeni alespoò s tím bodem. Jako vítìz základní èásti jsme èekali na soupeøe do playoff, po strhující bitvì se jím nakonec stalo mustvo Benbra. První zápas byl vyhecovanı, plnı obìtavıch zákrokù. Zápas nakonec dopadl v náš prospìch 17:12. Na druhı zápas dorazilo Benbro pouze ve 4 lidech a bylo jasné, e nemají šanci. Toto podcenìní vedlo k nejvìtší pøestøelce v historii RAFLU a celkem ke 42 vstøelenım brankám. Vítìzství 25:17 nevypadá sice moc krásnì, ale je to vítìzství. Jako jedinı neporaenı tım jsme vstupovali do bojù o 1.ligu. Jako první jsme zdolali ne moc bojovné a odhodlané mustvo Young Skillù a celkem jednoznaènì jsme vyhráli 10:3. Druhı zápas jsme sehráli s posledním  mustvem 1.ligy SUP MB. Po první tøetinì, kterou jsme vyhráli 8:3 vypadal zápas jako procházka     rùovım sadem, ale opak byl pravdou. Supy se vzchopili z 5ti brankové ztráty a bìhem chvilky ji smazali. Pøestøelka nakonec dopadla v náš prospìch 22:19. V tuto chvíli bylo skoro jasné, e máme postup do 1.ligy jistı, proto jsme u spíše pøemıšleli nad oslavou, ne abychom se soustøedili na poslední zápas sezóny a to se vymstilo. Náš nejvìtší konkurent v 2.lize, tım drakù, nás porazil 10:9 a tím také padla naše neporanitelnost, která èítala rovnıch <b>20 zápasù!</b> Postup do 1.ligy nám ale naštìstí neunikl a bará jsme i pøes tuto prohru s pøehledem vyhráli. \r\nNa závìr bych tedy dodal, e do 1.ligy se tìšíme a doufáme, e se tam neztratíme a neudìláme ostudu.', 'Michal Šverma'),
+(3, '29.3.09', 'Vítìzství nad Supama', 'Zápas probíhal ze zaèátku velice dobøe v náš prospìch. Potom, co jsme vedli 8:2, jsme však soupeøe podcenili, co zapøíèinilo nìkolik gólù do naší branky a otoèení v soupeøùv prospìch na 11:12. Naštìstí jsme se nenechali zaskoèit, upravili jsme trochu sestavu, proházeli trojky a po tøech vstøelenıch brankách v posledních vteøinách druhé tøetiny jsme se do toho opøeli. Tøetí tøetina byla zase vyrovnaná, ale poté dobrı náskok a ještì vylouèení na stranì Supù nám pøineslo vítìzství 22:19, co nás posunulo dále k snad jistému postupu do první ligy.', 'Pavel Tregl');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `anketa`
+--
+
+CREATE TABLE IF NOT EXISTS `anketa` (
+  `odp` int(11) NOT NULL DEFAULT '0',
+  `anketa` int(11) DEFAULT NULL,
+  `ip` char(15) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `ip_cele` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `cas` datetime NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=cp1250;
+
+--
+-- Vypisuji data pro tabulku `anketa`
+--
+
+INSERT INTO `anketa` (`odp`, `anketa`, `ip`, `ip_cele`, `cas`) VALUES
+(1, 1, '', NULL, '0000-00-00 00:00:00'),
+(2, 1, '81.25.16.78', 'byby78.tartarnet.net', '2009-03-25 18:05:37'),
+(1, 1, '147.230.165.212', 'e469.kolej.tul.cz', '2009-03-25 18:51:45'),
+(2, 1, '213.168.179.162', 'ffw02.dragon.cz', '2009-03-25 19:03:22'),
+(1, 1, '147.230.153.209', 'a466.kolej.tul.cz', '2009-03-25 19:26:05'),
+(1, 1, '147.230.165.73', 'e330.kolej.tul.cz', '2009-03-25 19:49:53'),
+(1, 1, '81.25.21.15', '81.25.21.15', '2009-03-25 20:06:46'),
+(1, 1, '78.110.208.243', 'gate1.metronet.cz', '2009-03-25 21:53:47'),
+(1, 1, '147.230.164.155', 'e156.kolej.tul.cz', '2009-03-25 22:45:47'),
+(1, 1, '213.168.184.14', 'h5838.dragon.cz', '2009-03-27 15:14:28'),
+(1, 1, '147.230.156.125', 'c126.kolej.tul.cz', '2009-03-29 21:18:20'),
+(1, 1, '78.128.151.93', 'pc151-93.upce.cz', '2009-03-29 22:01:44'),
+(1, 1, '195.113.126.152', 'pc126-152.upce.cz', '2009-03-30 11:40:06'),
+(1, 1, '78.128.153.206', 'pc153-206.upce.cz', '2009-03-30 16:17:24'),
+(1, 1, '90.177.52.251', '251.52.broadband10.iol.cz', '2009-03-30 18:43:26'),
+(2, 1, '88.103.83.172', '88.103.83.172', '2009-04-04 23:03:53'),
+(1, 1, '81.25.21.1', 'gw.comfeel.cz', '2009-04-05 20:15:31'),
+(1, 1, '78.110.210.99', '78.110.210.99', '2009-04-06 09:05:24'),
+(3, 1, '85.160.167.26', 'ip-85-160-167-26.eurotel.cz', '2009-04-11 20:52:27'),
+(1, 1, '92.43.26.35', 'nat1-lan2.net-online.cz', '2009-04-12 16:54:29'),
+(1, 1, '83.208.115.171', '171.115.broadband2.iol.cz', '2009-04-13 22:11:57'),
+(1, 1, '147.230.156.191', 'c192.kolej.tul.cz', '2009-04-22 16:37:08'),
+(1, 1, '193.179.195.177', '193.179.195.177', '2009-05-29 14:08:37'),
+(1, 1, '217.77.165.57', 'gprs10.vodafone.cz', '2009-06-27 19:19:42');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `baraz`
+--
+
+CREATE TABLE IF NOT EXISTS `baraz` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tym` varchar(255) COLLATE utf8_bin NOT NULL,
+  `body` int(11) NOT NULL,
+  `rozdil` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
+
+--
+-- Vypisuji data pro tabulku `baraz`
+--
+
+INSERT INTO `baraz` (`id`, `tym`, `body`, `rozdil`) VALUES
+(1, 'FBC Vikings', 4, '+9'),
+(2, 'Young Skill', 4, '+2'),
+(3, 'Dr.Aci Veselá', 4, '+1'),
+(4, 'FBK SUP', 0, '-12');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `body`
+--
+
+CREATE TABLE IF NOT EXISTS `body` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idHrace` int(11) NOT NULL,
+  `branky` int(11) NOT NULL,
+  `brankyPO` int(11) NOT NULL,
+  `odehraneZapasy` int(11) NOT NULL,
+  `odehraneZapasyPO` int(11) NOT NULL,
+  `rok` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=24 ;
+
+--
+-- Vypisuji data pro tabulku `body`
+--
+
+INSERT INTO `body` (`id`, `idHrace`, `branky`, `brankyPO`, `odehraneZapasy`, `odehraneZapasyPO`, `rok`) VALUES
+(1, 1, 33, 6, 16, 5, '2008/2009'),
+(2, 2, 14, 0, 8, 0, '2008/2009'),
+(3, 3, 66, 20, 11, 4, '2008/2009'),
+(4, 4, 30, 0, 12, 1, '2008/2009'),
+(5, 5, 0, 4, 4, 4, '2008/2009'),
+(6, 6, 34, 17, 12, 5, '2008/2009'),
+(7, 7, 3, 3, 16, 3, '2008/2009'),
+(8, 8, 36, 17, 16, 5, '2008/2009'),
+(9, 9, 19, 4, 16, 3, '2008/2009'),
+(10, 10, 15, 6, 0, 3, '2008/2009'),
+(11, 12, 24, 5, 0, 3, '2008/2009'),
+(12, 1, 0, 0, 0, 0, '2009/2010'),
+(13, 2, 0, 0, 0, 0, '2009/2010'),
+(14, 3, 0, 0, 0, 0, '2009/2010'),
+(15, 4, 0, 0, 0, 0, '2009/2010'),
+(16, 5, 0, 0, 0, 0, '2009/2010'),
+(17, 6, 0, 0, 0, 0, '2009/2010'),
+(18, 7, 0, 0, 0, 0, '2009/2010'),
+(19, 8, 0, 0, 0, 0, '2009/2010'),
+(20, 9, 0, 0, 0, 0, '2009/2010'),
+(21, 10, 0, 0, 0, 0, '2009/2010'),
+(22, 12, 0, 0, 0, 0, '2009/2010'),
+(23, 13, 0, 0, 0, 0, '2009/2010');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `downloady`
+--
+
+CREATE TABLE IF NOT EXISTS `downloady` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nazev` varchar(255) COLLATE utf8_bin NOT NULL,
+  `adresa` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
+
+--
+-- Vypisuji data pro tabulku `downloady`
+--
+
+INSERT INTO `downloady` (`id`, `nazev`, `adresa`) VALUES
+(1, 'Pravidla RAFL', 'http://florbal-rafl.com/download/pravidla.pdf'),
+(2, 'Zápis', 'http://florbal-rafl.com/download/zapis20082009.pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `gbook_v2`
+--
+
+CREATE TABLE IF NOT EXISTS `gbook_v2` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nick` varchar(32) COLLATE utf8_bin NOT NULL,
+  `mail` varchar(50) COLLATE utf8_bin NOT NULL,
+  `zprava` text COLLATE utf8_bin NOT NULL,
+  `cas` varchar(255) COLLATE utf8_bin NOT NULL,
+  `obr` varchar(255) COLLATE utf8_bin NOT NULL,
+  `ip` varchar(32) COLLATE utf8_bin NOT NULL,
+  `ip_cele` varchar(255) COLLATE utf8_bin NOT NULL,
+  `odpoved` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=156 ;
+
+--
+-- Vypisuji data pro tabulku `gbook_v2`
+--
+
+INSERT INTO `gbook_v2` (`id`, `nick`, `mail`, `zprava`, `cas`, `obr`, `ip`, `ip_cele`, `odpoved`) VALUES
+(20, 'Klingon', '', 'GJ....\r\nDodìlej tøeba ve volnu i to bodování..... A se Nebe víc snaí:-D ', '2009-03-25 20:06:10', '', '81.25.21.15', '81.25.21.15', 0),
+(27, 'Treglis', '', 'Anketa uz beha dobre.:-) ', '2009-03-25 22:48:37', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(18, 'Treglis', '', 'Tak sem mùete dávat nìjaké vaše komentáøe. Neslušné komentáøe budu mazat.', '2009-03-25 18:40:55', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(21, 'Treglis', '', 'Piste sem treba i navrhy, co byste tu jeste chteli, nemam na to cas, mozna kdyz se budu nudit tak to sem nejak doplnim neco. Ale spis bych to vyladil jeste a zacal se vsim od pristi sezony, koukam ted se se mi nevynulovala anketa, pocita se spatne.:-) ', '2009-03-25 22:21:41', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(22, 'Treglis', '', 'Pridat pocet odehranych zapasu k bodovani.', '2009-03-25 22:23:47', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(23, 'Treglis', '', 'Premejslel jsem o necem, ze by si clovek jen zaklik jestli jde na trenink nebo na zapas. Ale to by se tu museli udelat nejaky registrace, to spis to tu nekdo napise do komentare, by bylo dobry aby se tam pak neschazelo ve 2.', '2009-03-25 22:28:13', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(24, 'Treglis', '', 'sekci download, tam by mohla bejt treba tabulka pro zapis a nejaky dalsi podobny veci, pravidla treba.', '2009-03-25 22:38:04', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(25, 'Treglis', '', 'Pokud ma nekdo nejakej web, kterej pridat nebo reklamu, tak at neco posle, nebo da vedet.', '2009-03-25 22:39:50', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(26, 'Treglis', '', 'Asi tady odstranim ten web, to tam stejne nikdo vyplnovat nebude.', '2009-03-25 22:40:26', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(29, 'Treglis', '', 'Tak smajlici zustanou tyhle, nenasel jsem zadny jiny, ktery by byli dobry, vetsinou se spatne zobrazovali totiz.', '2009-03-26 11:51:41', '', '147.230.14.43', 'wifi043.tul.cz', 0),
+(36, 'Treglis', '', 'S Majklem jsme se dohodli, ze to udelame takhle jak pise, vzdyckyse za to napise + a ty goly. Pod to se napise legenda. ', '2009-03-26 19:18:58', '', '81.25.16.78', 'byby78.tartarnet.net', 35),
+(31, 'Harley', '', 'Na ty lajny zalezi jak se sejdeme,btw ty reklamy tam pridavas ty?', '2009-03-26 14:40:11', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(32, 'Treglis', '', 'Jo pridavam, na ty lajny se asi vyserem no. To je blbost.', '2009-03-26 15:31:56', '', '147.230.14.43', 'wifi043.tul.cz', 0),
+(33, 'Nebe', '', 'Good idea s tou sekcí \\&quot;download\\&quot;. Na hlavní stránku pod menu \\&quot;náš tım\\&quot; by se mohla vloit tabulka. Pøidat poèet odehranıch zápasù k bodování, ale to u tady Treglis psal. A celá sekce \\&quot;bodování\\&quot; by se mohla rozdìlit na \\&quot;základní èást\\&quot; a \\&quot;play-off+bará\\&quot;. ', '2009-03-26 15:58:00', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(34, 'honza', '', 'A mùeš, ty vole, tøeba pøidat tabulku zranìní a marodka. A máme taky šanci v nìèem vyniknout :)))', '2009-03-26 16:08:26', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(35, 'Harley', '', 'No ja bych to bodovani nedelil na playoff atd. ale treba by se za to mohlo napsat jenom + a pocet golu ktery padli v playoff,protoze kdyz ji treba hrat nebudeme,nebo hned vypadneme tak to nebude mit ani moc smysl ji delat si myslim', '2009-03-26 16:23:45', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(37, 'Treglis', '', 'Hele to je dobrej napad s tim souhlasim :-D nejak to pak poresim.', '2009-03-26 19:19:32', '', '81.25.16.78', 'byby78.tartarnet.net', 34),
+(38, 'Treglis', '', '[b]Pridano[/b]Tak jsem tam Majkle dal ty telefony na nas dva. Bodovani je setrideny od nejvetsiho po nejmensi.:-) ', '2009-03-26 19:39:57', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(39, 'Treglis', '', 'Jeste by me zajimalo jak by sis tu tabulku predstavoval, co treba tam dat, nebo jak to vytvorit. Posli mi kdyztak nejakej navrh, me uz se nechce vsechno vymejslet.', '2009-03-26 19:41:15', '', '81.25.16.78', 'byby78.tartarnet.net', 34),
+(40, 'Treglis', '', 'Nahodne foto bude zmeneno na spolecne foto, az teda ta fotka bude:-) ', '2009-03-26 19:48:31', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(41, 'Treglis', '', '[b]Uprava: [/b]Odebrana polozka web z komentare.', '2009-03-26 19:49:57', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(42, 'Treglis', '', '[b]Pro nekoho: [/b]Nemohl by mi nekdo sepsat tabulku, do ktery by mi napsal kolik kdo dal golu v playoff a barazi? Abych to mohl zapsat. [u]Nebe[/u] ty bys mohl, byl to tvuj napad a chtel jsi pomoct.', '2009-03-26 19:57:30', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(43, 'Nebe', '', 'OK, teï na to sednu, pošlu ti mail s tabulkou.', '2009-03-26 20:19:41', '', '213.168.179.162', 'ffw02.dragon.cz', 42),
+(44, 'Harley', '', 'Ja to napisu', '2009-03-26 21:12:43', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(45, 'Harley', '', 'Koukam ze ten komentar byl nejakej prehozenej,takze jsem tu tabulku psal asi zbytecne,ale to jedno...', '2009-03-26 21:23:01', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(46, 'Nebe', '', 'Poslal sem Treglisovi tabulku s poètem odehranıch zápasù a vstøelenıch gólù v play-off a barái ;-) ', '2009-03-26 22:04:54', '', '213.168.179.162', 'ffw02.dragon.cz', 45),
+(47, 'Nebe', '', 'Jinak ten komentáø není pøehozenej, takto se zobrazují reakce na danı komentáø - pod ten pøíspìvek, co na nìj reaguješ. Nebo nevím, co si myslel..', '2009-03-26 22:21:53', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(48, 'Harley', '', 'No tak nejak:-D ', '2009-03-26 22:23:36', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(49, 'Treglis', '', 'Takhle nejak to Majkl myslel. [b][u]Tohle plati pro vsechny, kdyz na neco reagujete, piste to jako odpoved na ten komentar, bude to pak prehlednejsi. ;-) [/u][/b]', '2009-03-26 22:25:00', '', '78.110.208.243', 'gate1.metronet.cz', 47),
+(50, 'Treglis', '', '[b]Uprava: [/b]Tak jsem upravil to bodovani na statistiky, takhle by to melo bejt dobry. Jak tam vsichni muzete videt, chybi tam pocet vasich odehranych zapasu, takze [b][u]Zadam vsechny, aby mi nejakym zpusobem napsali kolik zapasu odehrali, kdyz kouknete na rafl, a projedete si zapasy, tak si urcite vzpomenete. Jinak nektery jedince zadam jeste o ty informace do soupisky, kazdej se podivejte co vam tam chybi, kdyz mi nekdo neco posle tak to tam hned davam. A tu cepel si prosim vas, nejak najdete na netu, neni to zadnej problem.[/u][/b]', '2009-03-26 23:55:51', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(51, 'Nebe', '', 'to Treglis: no hezky na tom pracuješ ;-) play-off a bará spoj v jeden údaj, já to do tej tabulky, co sem ti posílal, poèítal dohromady, nemá cenu to dávat zvláš, kdy v p-o kadej odehrál maximálnì 2 zápasy s Benbrem a v barái hrajeme 3 zápasy. Do legendy napiš \\&quot;základní èást + playoff a bará\\&quot;, ok? A èoveèe, pøepiš slovo body na góly, nehrajeme basket :-D jinak super práce ;-) ', '2009-03-26 23:58:08', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(52, 'Treglis', '', 'S tema bodama to uz je detail', '2009-03-27 00:02:50', '', '78.110.208.243', 'gate1.metronet.cz', 51),
+(53, 'Treglis', '', 'to Nebe: jestli budes mit chut, nechtelo by se ti napsat nejaky aktuality? Treba ze bude ten vecirek a neco dalsiho?', '2009-03-27 00:19:23', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(54, 'honza', '', 'dneska opìt vyráim do špitálu, tak doufám, e budu moct v nedìli pøijít aspoò na kouèing:-D a natoèit nìjakı videa, tøeba hráèe è. 7? :-) a co ty treglis? jak seš na tom?', '2009-03-27 09:18:46', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(55, 'honza', '', 'jo a s tou marodkou to mùeš udìlat tøeba jako to maj boleslavskı hokejisti.. mrkni na bkboleslav.cz.. tabulka marodka, nìjaká ikonka køíku nebo rakve (ta se sem bude barevnì hodit) a k tomu jméno a pod to ten problemos.. A JE TO :))))', '2009-03-27 09:22:10', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(56, 'Treglis', '', 'Hele ja se musim dat do kupy abych byl uplne zdravej. Pak zavolam tomu doktorovi a on me to na nekdy zaridi. Chtelo by to co nejdriv, ale uz se z toho dostavam, bylo to kvuli alergii.:-( ', '2009-03-27 11:19:31', '', '78.110.208.243', 'gate1.metronet.cz', 54),
+(57, 'Harley', '', 'Koukam hrac c.7 zacina byt nejaky oblibeny:-D ', '2009-03-27 13:43:16', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(58, 'honza', '', 'Ten byl je a bude vdycky ten NEJOBLÍBENÌJŠÍ!!! :-D ', '2009-03-27 13:52:00', '', '81.25.16.78', 'byby78.tartarnet.net', 57),
+(59, 'Treglis', '', '[b]Upravy: [/b]Tak jsem sem zas neco pridal, je tu slibena marodka a sekce download. Kdybyste tam chteli nekdo neco pridat nebo nejak upravit tak napiste, delal jsem to narychlo.', '2009-03-27 14:50:41', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(60, 'Harley', '', 'Do marodky muzes pridat indyho,psal mi ze ma horecku,takze nejde dneska ani v nedeli', '2009-03-27 14:55:39', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(61, 'Treglis', '', 'Dneska jim nejak nefunguje pripojeni se na ftp, musim se tam pripojovat z webu, a to je pekne naprd, hrozne to zdrzuje.:-( ', '2009-03-27 15:02:38', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(62, 'Nebe', '', 'A co ta tabulka základní èásti, pøípadnì i baráe? Ta by se hodila mezi marodku a náš tım. Jinak rád bych nìco sepsal, ale teï na to nemám moc èas, nicménì ten èlánek o veèírku RAFL mùeš normálnì zkopèit ze stránek RAFL a pod to napsat jenom zdroj, a v tìch aktualitách máme aspoò nìco.', '2009-03-27 15:14:44', '', '213.168.179.162', 'ffw02.dragon.cz', 59),
+(63, 'Nebe', '', 'Svatá pravda ;-) ', '2009-03-27 15:17:08', '', '213.168.179.162', 'ffw02.dragon.cz', 58),
+(64, 'Treglis', '', 'Upravil jsem kod u ankety aby nesla odeslat, aby se neodeslalo ze jste odpovidali, kdyz jste nemeli nic zaskrtly, spatne se pak pocitali procenta. Odpoved s nulovou hodnotou se nepocitala, ale byla tam pocitana odpoved navic, tak to pak nesedelo. A hlavne ten clovek nemoh znova odpovidat kvuli odeslany ip. Vid Majkle:-D ', '2009-03-27 15:48:41', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(65, 'Harley', '', 'Ja to nebyl:-D ', '2009-03-27 18:08:43', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(66, 'Šugin', 'subrt_pavel@centrum.cz', 'Ja sem taky marod,tri stehy na pate,okazite pozaduji dopsani na arodku!:-D ', '2009-03-27 23:25:33', '', '88.103.83.172', '88.103.83.172', 0),
+(67, 'Šugin', 'subrt_pavel@centrum.cz', 'jo a zapasu 12 plus cely play off a baraz', '2009-03-27 23:35:47', '', '88.103.83.172', '88.103.83.172', 0),
+(68, 'Treglis', '', 'Ses tam.', '2009-03-27 23:55:26', '', '81.25.16.78', 'byby78.tartarnet.net', 66),
+(69, 'Šugin', 'subrt_pavel@centrum.cz', 'moje cepelecka 7XQuest', '2009-03-28 12:06:42', '', '88.103.83.172', '88.103.83.172', 0),
+(70, 'Treglis', '', 'Pridano.', '2009-03-28 12:23:49', '', '78.110.208.243', 'gate1.metronet.cz', 69),
+(71, 'Treglis', '', 'Pridano', '2009-03-28 12:23:58', '', '78.110.208.243', 'gate1.metronet.cz', 67),
+(72, 'Nebe', '', '[b] Hlavnì nezapomeòte, e dnes v noci se mìní èas, tak aby nebyl zítra prùser. [/b]', '2009-03-28 13:56:48', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(73, 'Treglis', '', 'DObre ty, malem bych mozna zapomnel.:-) ', '2009-03-28 15:41:02', '', '78.110.208.243', 'gate1.metronet.cz', 72),
+(74, 'Šugin', 'subrt_pavel@centrum.cz', 'dekuji za rychle vyrizeni mych prani:-D ', '2009-03-28 16:37:57', '', '88.103.83.172', '88.103.83.172', 0),
+(75, 'honza', '', 'Ty aby si nìkde nechybìl, co??? Beztak sis to udìlal schválnì... :-D ', '2009-03-28 16:53:38', '', '81.25.16.78', 'byby78.tartarnet.net', 74),
+(76, 'Šugin', 'subrt_pavel@centrum.cz', 'jenze ja sem zbabele neopustil tym v nejtezsich chvilich a i pres velke bolesti hraju:-D ', '2009-03-28 18:21:25', '', '88.103.83.172', '88.103.83.172', 0),
+(77, 'honza', '', 'No tak mi dneska s treglisem nastoipime ale budeme jen èíhat u branky a ty to za nás obìháš, ok? Ty obìtavèe!!! :-D', '2009-03-29 10:42:21', '', '81.25.16.78', 'byby78.tartarnet.net', 76),
+(78, 'Treglis', '', 'A do nej.:-D ', '2009-03-29 11:24:35', '', '78.110.208.243', 'gate1.metronet.cz', 77),
+(79, 'honza', '', 'Hošáncí, nebylo to ideální, ale nejdùleitìjší je, e se vyhrálo!!! U jenom ty pr.del.aci a je TO!!! :-D ', '2009-03-29 15:19:12', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(80, 'Nebe', '', 'Zaplapánbùh za dva bodíky. Za sebe øíkám, e mimo první tøetiny to stálo z mé strany za vyli pr*el, trochu se projevila i ta nemoc, vùbec sem nestaèil fyzicky. Velice dobøe ste to s Treglisem odkouèovali.  ', '2009-03-29 16:19:51', '', '213.168.179.162', 'ffw02.dragon.cz', 79),
+(81, 'Treglis', '', 'Dík za uznání. Neøíká se mi to moc dobøe kdy vám musím øíct, e nebudete hrát, ale musí se to brát v zájmu tımu. A všem šlo prostì o to, abysme vyhráli.', '2009-03-29 16:22:57', '', '78.110.208.243', 'gate1.metronet.cz', 80),
+(82, 'Treglis', 'treglis@atlas.cz', '[b]Jinak jsem doplnil Rozpis zápasù.[/b]', '2009-03-29 16:23:36', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(83, 'Treglis', 'treglis@atlas.cz', 'Dneska se to zvládlo dobøe, jsem za to rád. Na zaèátku jsme jim dali pár fíkù a kvùli tomu jsme to pak podcenili, ale hlavnì, e jsme se dali do kupy a zvrátili to na naši stranu.:-D ', '2009-03-29 16:25:08', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(84, 'Nebe', '', 'to Treglis: naprosto správnì ste mì ke konci zápasu stáhli, trápil sem se a nešlo mi to, navíc jak øíkám, po tej nemoci sem navíc ani nestaèil fyzicky. Na Draky bude líp ;-) ', '2009-03-29 16:27:39', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(85, 'Nebe', '', 'btw. nechceš tam teda hodit alespoò tabulku baráe, kdybys mìl èas ji udìlat?', '2009-03-29 16:31:04', '', '213.168.179.162', 'ffw02.dragon.cz', 0),
+(86, 'Treglis', 'treglis@atlas.cz', 'Tak jsem dokonce napsal i neco do aktualit. :-) ', '2009-03-29 16:43:06', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(87, 'Treglis', 'treglis@atlas.cz', 'Hele ted jedu na bratruv hokej, ale uvidime, mozna jestli bude vecer cas, tak zkusim neco udelat. A marodku presunu pod anketu.', '2009-03-29 16:44:54', '', '78.110.208.243', 'gate1.metronet.cz', 85),
+(88, 'Treglis', 'treglis@atlas.cz', 'Tak jsem pridal tu tabulku baraze a prehodil marodku a jeste jsem dal prvni stranku aktuality.', '2009-03-30 00:49:10', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(89, 'Treglis', 'treglis@atlas.cz', 'Uz nam bezi fotogalerie, jeste akorat potrebujem ty nase portrety no.:-D ', '2009-03-30 16:09:14', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(90, 'Treglis', 'treglis@atlas.cz', 'Pribyla jeste sekce videa.;-) ', '2009-03-30 19:43:48', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(91, 'Šugin', 'subrt_pavel@centrum.cz', 'kterej vocas tam dal to video co:-D ', '2009-03-31 03:11:42', '', '195.113.118.50', '195.113.118.50', 0),
+(92, 'Treglis', 'treglis@atlas.cz', '%)  Ja to nebyl.', '2009-03-31 10:11:17', '', '147.230.164.155', 'e156.kolej.tul.cz', 91),
+(93, 'honza', '', 'Ty si prostì naše tımová mediální hvìzda :-D  :-D  :-D ', '2009-03-31 11:22:06', '', '195.113.126.115', 'pc126-115.upce.cz', 91),
+(94, 'honza', '', 'Jo a taky sem koukal, e v tabulce (podle toho jakı je poøadí) rozhoduje vzájemnı zápas. Take by bylo lepší v nedìli neprohrát... A neni zbyteènı drámo %) ', '2009-03-31 11:31:00', '', '195.113.126.115', 'pc126-115.upce.cz', 0),
+(95, 'Šugin', 'subrt_pavel@centrum.cz', 'cenna informace...', '2009-03-31 12:08:31', '', '195.113.118.50', '195.113.118.50', 94),
+(96, 'Treglis', 'treglis@atlas.cz', 'Abysme ale nepostoupili, tak by jeste museli Young skillove o hodne vyhrat, coz si myslim ze je hodne nerealny.:-) ', '2009-03-31 12:22:49', '', '147.230.14.43', 'wifi043.tul.cz', 94),
+(97, 'Treglis', 'treglis@atlas.cz', 'My hlavne neprohajem.:-D ', '2009-03-31 12:23:16', '', '147.230.14.43', 'wifi043.tul.cz', 94),
+(98, 'Nebe', '', 'Celou sezonu se neprohrálo... bylo by fajn se v nedìli rozlouèit se sezonou vıhrou ;-) ', '2009-03-31 13:18:42', '', '78.128.155.239', 'pc155-239.upce.cz', 94),
+(99, 'Nebe', '', 'to Treglis: nechci bejt puntíèkáø, ale máš chybku v rozpisu - se SUPama sme hráli ve 13:15 :-) ', '2009-03-31 13:26:00', '', '78.128.155.239', 'pc155-239.upce.cz', 0),
+(100, 'Šugin', 'subrt_pavel@centrum.cz', 'nebe je puntickar:-D ', '2009-03-31 13:51:06', '', '195.113.118.50', '195.113.118.50', 99),
+(101, 'Harley', '', 'Tak jsem nas oficialne prihlasil do dalsi sezony raflu... Prej je obrovskej zajem,tak jsem na to zvedavej', '2009-03-31 14:42:44', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(102, 'Treglis', 'treglis@atlas.cz', 'To uz se to zjistovalo tak brzo jo?', '2009-03-31 14:46:59', '', '147.230.14.43', 'wifi043.tul.cz', 101),
+(103, 'Treglis', 'treglis@atlas.cz', 'Tak jsem ti udelal radost. ;-) ', '2009-03-31 14:50:03', '', '147.230.14.43', 'wifi043.tul.cz', 99),
+(104, 'Harley', '', 'Do 20.4 musej byt odeslany prihlasky,kdo posle pozdejc ma prej smulu', '2009-03-31 14:50:50', '', '81.25.16.78', 'byby78.tartarnet.net', 102),
+(105, 'Treglis', 'treglis@atlas.cz', 'Hele ono jestli je o to tak velkej zajem, tak kdyby se prihlasilo celkem 24 tymu co muze bejt, tak by to asi bylo tak, ze vsichni z baraze by sli do prvni ligy. Teoreticky.', '2009-04-01 12:26:54', '', '147.230.14.43', 'wifi043.tul.cz', 0),
+(106, 'Harley', '', 'I prakticky', '2009-04-01 13:33:24', '', '81.25.16.78', 'byby78.tartarnet.net', 105),
+(107, 'Treglis', 'treglis@atlas.cz', 'to Honza: Kdy budes mit ten clanek?', '2009-04-01 23:44:56', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(108, 'Nebe', '', 'Návrh na zmìnu ankety: Kde byste chtìli udìlat rozluèku a oslavu postupu? Varianty bychom probrali zítra na tréninku. Myslím si, e o postupu ji mùeme mluvit nahlas po pøíspìvky Majkla ohlednì pøihlášek na novou sezonu, nicménì v nedìli bychom mìli hrát naplno a Draky porazit ;-) ', '2009-04-02 14:34:31', '', '78.128.153.192', 'pc153-192.upce.cz', 0),
+(109, 'Harley', '', 'No ja myslim ze 17.4 ve smaku ne? Nebo ty chces jeste nekde jinde a jindy?', '2009-04-02 17:34:32', '', '81.25.16.78', 'byby78.tartarnet.net', 108),
+(110, 'Nebe', '', 'No já myslel nìco soukromého, jako sme se v srpnu poprvé sešli ve Šmaku.', '2009-04-02 19:29:35', '', '78.128.153.192', 'pc153-192.upce.cz', 109),
+(111, 'Šugin', 'subrt_pavel@centrum.cz', 'Ahoj kluci,tak sem se vratil odpocatej z chorvatska a sem pekne natesenej na zejtra a abych vas dostatecne nabudil,tak vam posilam odkaz kde sem travil minule dny:-) ,a nasel sem uplne presnou fotku to abych vas trochu nasral:-D ,http://www.princess.co.uk/princess-23-metre-23M-motor-yachts.html', '2009-04-04 23:03:08', '', '88.103.83.172', '88.103.83.172', 0),
+(112, 'Harley', '', 'Honza to na ten rafl napsal fakt nadherne,az jsem s toho urojil slzu:-D ', '2009-04-05 20:53:58', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(113, 'honza', '', 'Ty vole hošánci, ten sejtko mì zase na stránkách raflu dostal. V podstatì jsme podle nìj všichni èuráci, e se to, e je to finále objevilo a po rozkliknutí a majkl je podle nìj (jako vedoucí) ještì vìtší, kdy to tak odsouhlasil..\r\nAle u tam nic psát nebudu, protoe pak budeme vzpadat jako ubreèenı princezny. prostì sme mìli vyhrát a kdy ne, tak nás aspoò mùe tìšit, e sme ty \\''\\''sympaáky\\''\\'' z draèí prdele.. teeeda sluje  :-) aspoò trošku nasrali tim jejich \\''\\''nepostupem\\''\\''', '2009-04-06 18:12:24', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(114, 'Treglis', 'treglis@atlas.cz', 'Souhlas s tebou, me to taky dostalo.', '2009-04-06 20:20:35', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(115, 'Treglis', 'treglis@atlas.cz', 'To vis, Sejtko dostal klepec, tak si to musi na nekom vybit.  Me treba nenapadlo si to tady rozkliknout na celej clanek, kdyz vsechny ostatni co tam v ty barazi jsou, kdyz se rozkliknou, tak jsou uplne stejny.', '2009-04-06 20:27:03', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(116, 'Harley', '', 'No podle me na zacatku sezony nebylo nikde receni ze tohle bude nejaky finale, ale hadej se s nim porad, akorat budeme vypadat jako kokoti, takze to necham byt, skoda ze jsem si ty jednani tenkrat nenahraval:-D ', '2009-04-06 22:47:32', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(117, 'Šugin', 'subrt_pavel@centrum.cz', 'jak vidite sejtka arogantne chodit jak kral na zapasech, tak stejne arogante nam odpovedel,chuj jede:) :-D ', '2009-04-07 00:51:14', '', '195.113.118.50', '195.113.118.50', 0),
+(118, 'Treglis', 'treglis@atlas.cz', 'Asi tak, podle me b si to alespon jeden z nas nejak pamatoval, ze by se neco takovyho reklo. Ale taky to nechci resit. Ale kdybysme ho chteli odrovnat, tak by stacilo mu sebrat tu jeho mikinu, to by uz nerozdejchal. :-D', '2009-04-07 10:41:14', '', '147.230.14.50', 'wifi050.tul.cz', 116),
+(119, 'Treglis', 'treglis@atlas.cz', 'Kdo z vas nepujde na sraz?', '2009-04-07 19:32:44', '', '147.230.164.155', 'e156.kolej.tul.cz', 0),
+(120, 'honza', '', 'majkle, majkle.. to bylo øeèí, e nedokáeš nic napsat.. to by mì zajímalo, co teï budu psát do toho \\''\\''o nás\\''\\'' kdy si mi vzal :) tolik myšlenek.. ale jinak klobouk dolù. vytáhnul ses. ', '2009-04-07 20:09:45', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(121, 'Treglis', 'treglis@atlas.cz', 'Ty hlavne uz neco napis :-D. Majkl to zvladnul za 20min a ty porad nic. Tam prave klidne i z toho neco pouzij aby tam bylo uz i zakombinovany, jak jsme v prvni sezone dopadli.', '2009-04-07 21:56:21', '', '147.230.164.155', 'e156.kolej.tul.cz', 120),
+(122, 'honza', '', 'no vidiš jakej je to skvìlej spisovatel.. ono to napsání moc dlouho trvat nebude jen se odhodlat a mít nìjakej nepøekonatelnej nápad :)', '2009-04-08 10:58:39', '', '81.25.16.78', 'byby78.tartarnet.net', 121),
+(123, 'Treglis', 'treglis@atlas.cz', 'to Honza: kdy jdes do ty nemocnice? Me to nakonec dopadlo tak, ze jdu uz 16. 4., nastup mam ve stredu.', '2009-04-08 11:35:20', '', '147.230.14.50', 'wifi050.tul.cz', 0),
+(124, 'Harley', '', 'Dekuji za poklonu honziku,co ty fotky kdy to nahodis?', '2009-04-08 15:48:35', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(125, 'Treglis', 'treglis@atlas.cz', 'Ja je nahodim az mi to honza posle:-D ', '2009-04-08 17:30:51', '', '147.230.164.155', 'e156.kolej.tul.cz', 124),
+(126, 'honza', '', 'hoši, hoši, dneska sem teï tìch 900 (z toho 850 nafotil nìma :) ) fotek stáhnul.. dám ty naše nìjak dohromady a nìkam to nasdílim (jestli máte ideu kam, tak mi to napištì)\r\nto treglis: já jdu na tu artroskopii v pátek ráno.', '2009-04-08 19:18:43', '', '81.25.16.78', 'byby78.tartarnet.net', 125),
+(127, 'honza', '', 'to treglis: tady sou ty fotky http://uloz.to/1598259/09-04-05 - fbc vikings vs. dr.aci veselá.zip, a to stáhneš, tak mi, prosím, pošli sms a já to z toho uloz.to smau. ', '2009-04-09 11:19:24', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(128, 'Treglis', 'treglis@atlas.cz', 'Uz to mam stazeny, tak to muzes smaznout.', '2009-04-09 11:46:02', '', '147.230.14.50', 'wifi050.tul.cz', 127),
+(129, 'honza', '', 'odkaz znovu (nìjak sem ty fotky pøedtím pojebal)\r\nhttp://uloz.to/1598425/09-04-05%20-%20fbc%20vikings%20vs.%20dr.aci%20vesel%C3%A1.zip', '2009-04-09 12:04:45', '', '81.25.16.78', 'byby78.tartarnet.net', 127),
+(130, 'honza', '', 'stáhni ty novı, dík!!! tam sou nìkterı oøezanı a upravenı.. nìjak se mi ta úprava u tìch pøedchozích jebla...', '2009-04-09 12:05:39', '', '81.25.16.78', 'byby78.tartarnet.net', 129),
+(131, 'Treglis', '', 'Tak uz to mam taky', '2009-04-09 13:37:29', '', '78.110.208.243', 'gate1.metronet.cz', 129),
+(132, 'Treglis', 'treglis@atlas.cz', 'uz tu jsou ty dalsi fotky', '2009-04-09 15:25:09', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(133, 'honza', '', 'a èekám nìjakej koment!!! protoe si myslim, e na tìhle u je malinko znát kvalita foáku... a fotografa :-D ', '2009-04-09 18:08:54', '', '81.25.16.78', 'byby78.tartarnet.net', 132),
+(134, 'Treglis', 'treglis@atlas.cz', 'To mas pravdu, na tech to je hodne videt, dobry zabery, jen majkl ti tam obcas utikal ze zaberu, jak byl rychlej. ;-) :-D ', '2009-04-10 13:32:27', '', '81.25.16.78', 'byby78.tartarnet.net', 133),
+(135, 'Treglis', '', 'Tak uz jsem to dal dohromady, jak to bylo rozhozeny', '2009-04-11 00:13:05', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(136, 'honza', '', 'to treglis: tak nakonec se moná plastice vyhnu, èást vazu to drí a koleno tak není nestabilní.. take sem teï oficiálnì v rekonvalescenci po artroskopii. ', '2009-04-13 10:38:10', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(137, 'Treglis', '', 'Tak to mas dobry, hlavne abys to mel dobry a vydrzelo to no. Bude to chtit pak bejt ale opatrnej, asi nejakou ortezu ne, pro jistotu.', '2009-04-13 11:46:04', '', '81.25.21.1', 'gw.comfeel.cz', 0),
+(138, 'honza', '', 'tak mì, majkle, napadá... kdy bude OSLAVÁÁÁÁÁÁÁÁÁÁÁ????? :-D ', '2009-04-15 23:00:05', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(139, 'Nebe', '', 'A kdy bude ten èlánek \\&quot;o nás\\&quot;? Bude to ještì letos? :-D %) ', '2009-04-16 12:04:44', '', '78.128.152.61', 'pc152-61.upce.cz', 138),
+(140, 'Nebe', '', 'Hoši, take zítra všichni v dresech na galaveèer? Platí to, na èem sme se domluvili? Máte nìkdo pøehled, kdo od nás dorazí/nedorazí?', '2009-04-16 12:06:09', '', '78.128.152.61', 'pc152-61.upce.cz', 0),
+(141, 'honza', '', 'o nás bez nás??!! není mùza... :)', '2009-04-17 16:01:52', '', '81.25.16.78', 'byby78.tartarnet.net', 139),
+(142, 'Treglis', '', 'Ja bych nakonec navrhoval pak nekdy jeste nekde nejakej sraz, pekne me nasrali.:-( ', '2009-04-18 12:24:50', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(143, 'Treglis', '', 'Hlavne Honza at uz napise ten clanek, a musej se udelat ty fotky, a pokud mate nejaky z toho galaveceru tak mi je poslete taky', '2009-04-18 12:25:34', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(144, 'Treglis', '', 'Jinak to dopadlo dobre, nic jinyho jsem si tam neporouchal, tak jen ten vaz nahradili, muzu na to i zlehka pokladat na zem a pohybat to do nejakejch 70 stupnu, tak si myslim ze by mi to ani nemuselo tolik ochabnout a ze to zas tak hrozny nebude. Bolelo to ale docela fest, ted uz to je v pohode ale. Jen me sere ze jsem nemoh na ten vecer no. Ale tak to se da delat. A prej mel Sejtko nejaky kecy ze jsme si stezovali rikal bratr, to me hlavne stve ze sem tam nebyl, bych se tam to nej pustil za ty jeho debilni kecy.', '2009-04-18 12:29:49', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(145, 'honza', '', 'to treglis:\r\nkdy udìláme nìkde nìjakou tu akcièku, tak mùu vzít foák a udìláme ty fotky tìch našich ksichtù :) ten èlánek furt nìjak nemùu udìlat, aby se mi líbil ale zapracuju na tom. jinak je dobøe, e všechno dopadlo ok. u se tìšim a si spolu zahrajeme v lajnì mrzákù :)', '2009-04-19 11:24:57', '', '81.25.16.78', 'byby78.tartarnet.net', 0),
+(146, 'Treglis', '', 'No na to mam jeste dost, casu, zatim se tesim az budu moct chodit :-) . Ale co jsem na to koukal na netu tak tam to po 6 tydnech uz uplne ohybali a ja to musim mit 6 tydnu o berlich aby se zpravila ta slacha, takze pak uz bych snad moh taky normalne chodit a ani by nemusela bejt tak hrozna rehabilitace, myslim ze to tolik neochabne.', '2009-04-19 14:23:21', '', '78.110.208.243', 'gate1.metronet.cz', 145),
+(147, 'Treglis', '', 'Tak jsem zacal uz delat nejaky upravy na webu. Je toho dost, ale vy si toho nevsimnete :-D. Musel jsem nejak vylepsit zadavani udaju. Nakonec udelam asi nejaky rozhrani, kde se bude moct cokoliv pridat, kdyz budete znat heslo. Ale to jeste chvili potrva.', '2009-06-26 02:56:03', '', '78.110.208.243', 'gate1.metronet.cz', 0),
+(148, 'Nebe', '', 'Drazí spoluhráèi, aby se to tu trochu pohnulo (co se tıèe diskuze), vkládám zde tento odkaz:\r\nhttp://www.bootcamps.cz/?gclid=COOTp-KOtZsCFUgTzAodDnhERA\r\nMrknìte na to... moje milovaná sestøièka pravidelnì chodí a je spokojená a mì tak napadlo, e do toho pùjdu taky (nemám teï aktuálnì témìø ádnı pohyb) v rámci takové jakési letní individuální pøípravy. Co vy na to, pøidá se nìkdo? Btw. chodí tam pøevánì jen enskı :-) ', '2009-07-01 20:20:24', '', '81.25.16.77', 'nat77-customers.tartarnet.net', 0),
+(155, 'Treglis', '', 'iuehršèiuèøš', '2009-08-31 18:27:02', '', '127.0.0.1', 'localhost', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `hraci`
+--
+
+CREATE TABLE IF NOT EXISTS `hraci` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prezdivka` varchar(255) COLLATE utf8_bin NOT NULL,
+  `jmenoPrijmeni` varchar(255) COLLATE utf8_bin NOT NULL,
+  `datumNarozeni` varchar(255) COLLATE utf8_bin NOT NULL,
+  `cisloDresu` int(11) NOT NULL,
+  `pozice` varchar(255) COLLATE utf8_bin NOT NULL,
+  `znackaHole` varchar(255) COLLATE utf8_bin NOT NULL,
+  `cepel` varchar(255) COLLATE utf8_bin NOT NULL,
+  `zahnuti` varchar(255) COLLATE utf8_bin NOT NULL,
+  `email` varchar(255) COLLATE utf8_bin NOT NULL,
+  `telefon` int(11) NOT NULL,
+  `icq` int(11) NOT NULL,
+  `funkce` varchar(255) COLLATE utf8_bin NOT NULL,
+  `funkce2` varchar(255) COLLATE utf8_bin NOT NULL,
+  `fotka` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=14 ;
+
+--
+-- Vypisuji data pro tabulku `hraci`
+--
+
+INSERT INTO `hraci` (`id`, `prezdivka`, `jmenoPrijmeni`, `datumNarozeni`, `cisloDresu`, `pozice`, `znackaHole`, `cepel`, `zahnuti`, `email`, `telefon`, `icq`, `funkce`, `funkce2`, `fotka`) VALUES
+(1, 'Majkl', 'Michal Šverma', '15.4.1986', 7, 'Útoèník', 'Salming', '7X original', 'Levé', 'harleymaster@seznam.cz', 775649761, 348554442, '  ''Kapitán''', ' - Vedoucí tımu', 'images/majkl.jpg'),
+(2, 'Treglis', 'Pavel Tregl', '28.10.1986', 21, 'Útoèník', 'Salming', 'Cypher Zorro', 'Levé', 'treglis@atlas.cz', 737664280, 269915680, '  ''Správce webu''', ' - Zástupce vedoucího', 'images/treglis.jpg'),
+(3, 'Treglos', 'Dominik Tregl', '8.11.1990', 13, 'Obránce', 'Unihoc', 'ACE', 'Levé', 'treglos@atlas.cz', 0, 341984667, '', '', 'images/treglos.jpg'),
+(4, 'Tuøín', 'Jan Turek', '30.7.1984', 37, 'Obránce', 'Canadien', 'Cypher Zorro', 'Pravé', 'jan_turek@email.cz', 0, 306593906, '  ''Rozhodèí''', '', 'images/honza.jpg'),
+(5, 'Nebe', 'Jakub Nebeskı', '15.5.1984', 24, 'Útoèník (obránce)', 'Titan', 'Salming 2X', 'Levé', 'jnebesky@centrum.cz', 0, 465323261, '', '', 'images/nebe.jpg'),
+(6, 'Šugin', 'Pavel Šubrt', '8.10.1985', 3, 'Útoèník', 'Salming', '7X Quest', 'Pravé', 'subrt_pavel@centrum.cz', 0, 0, '', '', 'images/sugin.jpg'),
+(7, 'Domi', 'Vojtìch Domorád', '3.7.1986', 17, 'Obránce', 'Salming', 'Cypher Zorro', 'Levé', 'domorad.vojtech@gmail.cz', 0, 293723641, '', '', 'images/domi.jpg'),
+(8, 'Bublin', 'Libor Štros', '6.7.1988', 22, 'Útoèník', 'Salming', '2X', 'Levé', 'liborstros@seznam.cz', 0, 272948186, '  ''Rozhodèí''', '', 'images/libor.jpg'),
+(9, 'Wawris', 'Ondøej Vávra', '4.10.1988', 9, 'Útoèník', 'Salming', '7X Quest', 'Levé', 'usersifest@post.cz', 0, 337074511, '', '', 'images/vavra.jpg'),
+(10, 'Klingon', 'Jiøí Hradiskı', '8.12.1988', 18, 'Obránce', '', '', '', 'jirka.hradisky@seznam.cz', 0, 0, '', '', 'images/klingon.jpg'),
+(11, 'Lukáš', 'Lukáš Vydra', '26.10.1983', 1, 'Golman', '', '', '', 'carak@post.cz', 0, 0, '', '', 'images/lukas.jpg'),
+(12, 'Indy', 'Pavel Hron', '1.6.1988', 67, 'Útoèník', 'Unihoc', '', 'Pravé', 'pa-h@post.cz', 0, 303527941, '', '', 'images/indy.jpg'),
+(13, 'Kamil', 'Kamil Baloun', '6.5.1987', 65, 'Obránce', 'Salming', 'Cypher Playmaker', 'Levé', 'kamil.baloun@seznam.cz', 0, 318615996, '', '', 'images/kamil.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `marodka`
+--
+
+CREATE TABLE IF NOT EXISTS `marodka` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `jmeno` varchar(255) COLLATE utf8_bin NOT NULL,
+  `poraneni` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
+
+--
+-- Vypisuji data pro tabulku `marodka`
+--
+
+INSERT INTO `marodka` (`id`, `jmeno`, `poraneni`) VALUES
+(1, 'Treglis', 'Po plastice køíového vazu. Rozvièování.');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `weby`
+--
+
+CREATE TABLE IF NOT EXISTS `weby` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nazev` varchar(255) COLLATE utf8_bin NOT NULL,
+  `adresa` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=9 ;
+
+--
+-- Vypisuji data pro tabulku `weby`
+--
+
+INSERT INTO `weby` (`id`, `nazev`, `adresa`) VALUES
+(3, 'Stránky RAFL', 'http://www.florbal-rafl.com'),
+(4, 'Èeská florbalová unie', 'http://www.cfbu.cz'),
+(5, 'FBK Sokol MB', 'http://www.florbalmb.cz'),
+(6, 'Florbal.cz', 'http://www.florbal.cz'),
+(7, 'E-shop Florbal.com', 'http://www.florbal.com'),
+(8, 'E-shop Salmingstore.cz', 'http://www.salmingstore.cz');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabulky `zapasy`
+--
+
+CREATE TABLE IF NOT EXISTS `zapasy` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `domaci` varchar(255) COLLATE utf8_bin NOT NULL,
+  `hoste` varchar(255) COLLATE utf8_bin NOT NULL,
+  `datumCas` varchar(255) COLLATE utf8_bin NOT NULL,
+  `misto` varchar(255) COLLATE utf8_bin NOT NULL,
+  `vysledekDomaci` int(11) NOT NULL,
+  `vysledekHoste` int(11) NOT NULL,
+  `typ` varchar(255) COLLATE utf8_bin NOT NULL,
+  `rocnik` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=26 ;
+
+--
+-- Vypisuji data pro tabulku `zapasy`
+--
+
+INSERT INTO `zapasy` (`id`, `domaci`, `hoste`, `datumCas`, `misto`, `vysledekDomaci`, `vysledekHoste`, `typ`, `rocnik`) VALUES
+(1, 'Fbc Lightnings', 'FBC Vikings', '7.9.08 10:30', '6. ZŠ', 5, 16, 'normal', '2008/2009'),
+(2, 'FBC Vikings', 'FBC Bakov Satans', '7.9.08 13:30', '6. ZŠ', 32, 6, 'normal', '2008/2009'),
+(3, 'FBC Vikings', 'FBC Dynamo MB', '21.9.08 9:30', '6. ZŠ', 23, 4, 'normal', '2008/2009'),
+(4, 'White Flying Rabbits', 'FBC Vikings', '21.9.08 11:30', '6. ZŠ', 7, 14, 'normal', '2008/2009'),
+(5, 'Dr.ACI Veselá', 'FBC Vikings', '12.10.08 9:00', 'Sokolovna', 9, 9, 'normal', '2008/2009'),
+(6, 'FBC Vikings', 'FBC Gladiators MB', '12.10.08 11:30', 'Sokolovna', 10, 6, 'normal', '2008/2009'),
+(7, 'FBC Vikings', 'TJ Sokol Benbro', '19.10.08 10:30', '6. ZŠ', 28, 12, 'normal', '2008/2009'),
+(8, 'Notor Band Klášter', 'FBC Vikings', '26.10.08 15:30', '6. ZŠ', 6, 15, 'normal', '2008/2009'),
+(9, 'FBC Bakov Satans', 'FBC Vikings', '2.11.08 9:30', '6. ZŠ', 9, 16, 'normal', '2008/2009'),
+(10, 'FBC Vikings', 'Fbc Lightnings', '2.11.08 12:30', '6. ZŠ', 21, 6, 'normal', '2008/2009'),
+(11, 'FBC Vikings', 'White Flying Rabbits', '16.11.08 11:30', '6. ZŠ', 15, 6, 'normal', '2008/2009'),
+(12, 'FBC Dynamo MB', 'FBC Vikings', '16.11.08 13:30', '6. ZŠ', 7, 17, 'normal', '2008/2009'),
+(13, 'FBC Gladiators MB', 'FBC Vikings', '1.2.09 15:00', 'Sokolovna', 9, 14, 'normal', '2008/2009'),
+(14, 'FBC Vikings', 'Dr.ACI Veselá', '1.2.09 17:30', 'Sokolovna', 12, 8, 'normal', '2008/2009'),
+(15, 'TJ Sokol Benbro', 'FBC Vikings', '15.2.09 9:00', 'Sokolovna', 7, 21, 'normal', '2008/2009'),
+(16, 'FBC Vikings', 'Notor Band Klášter', '15.2.09 11:30', 'Sokolovna', 11, 4, 'normal', '2008/2009'),
+(17, 'FBC Vikings', 'TJ Sokol Benbro', '8.3.09 15:45', '6. ZŠ', 17, 12, 'playoff', '2008/2009'),
+(18, 'TJ Sokol Benbro', 'FBC Vikings', '15.3.09 9:30', '6. ZŠ', 17, 25, 'playoff', '2008/2009'),
+(19, 'FBC Young Skill', 'FBC Vikings', '22.3.09 12:00', '6. ZŠ', 3, 10, 'baraz', '2008/2009'),
+(20, 'FBC Vikings', 'FBK SUP MB', '29.3.09 13:15', '6. ZŠ', 22, 19, 'baraz', '2008/2009'),
+(21, 'FBC Vikings', 'Dr.ACI Veselá', '5.4.09 12:00', '6. ZŠ', 9, 10, 'baraz', '2008/2009'),
+(22, 'FBC Vikings', 'White Flying Rabbits', '6.9.09 11:00', '6. ZŠ', 0, 0, 'normal', '2009/2010'),
+(23, 'Dr.ACI Veselá', 'FBC Vikings', '6.9.09 13:00', '6. ZŠ', 0, 0, 'normal', '2009/2010'),
+(24, 'FBC Vikings', 'FBK Cerberos', '27.9.09 10:00', 'Sokolovna', 0, 0, 'normal', '2009/2010'),
+(25, 'FBC Young Skill', 'FBC Vikings', '27.9.09 12:00', 'Sokolovna', 0, 0, 'normal', '2009/2010');

@@ -1,0 +1,53 @@
+/* CSS Document */
+body {
+	font-family: Times New Roman, Verdana, Helvetica, sans-serif;
+	background-color: #C5C5C5;
+}
+h1 {
+  color: #002050;
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  color: #2000E0;
+}
+h3 {
+  color: #D00030;
+}
+.horniMenu {
+  text-align: center;
+}
+.horniMenu a {
+  color: #A00020;
+}
+.odkazUprava a {
+  color: #007000;
+}
+.odkazSmazani a {
+  color: #F00000;
+}
+table {
+  border-collapse: collapse;
+}
+.tabulkaVypis td {
+  font-weight: normal;
+  padding: 2px 5px 2px 5px;
+  border: solid #002050 thin;
+}
+.tabulkaNadpis td{
+  font-weight: bold;
+  border: solid #002050 thin;		
+  padding: 2px 5px 2px 5px;
+}
+.tabulkaTvorba {
+  font-weight: bold;
+}
+.detailNadpisy{
+  color: #A00020;
+  width: 20%;
+  padding-top: 8px;
+}
+.tabulkaDetail{
+  width: 50%;
+  font-weight: bold;
+}
